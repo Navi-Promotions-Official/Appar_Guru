@@ -1579,3 +1579,9 @@ input[type="radio"]:checked + .color-circle {
   padding: 0px !important;
   height: 3px;
 }
+
+/* Bike Specification Table Styling */
+.product-specifications table th,
+.product-specifications table td {
+  padding: 12px 20px;
+}
