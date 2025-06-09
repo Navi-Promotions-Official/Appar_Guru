@@ -1585,3 +1585,57 @@ input[type="radio"]:checked + .color-circle {
 .product-specifications table td {
   padding: 12px 20px;
 }
+
+
+@media (max-width:1280px) {
+  .header-top {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+@media (width:375px) {
+  .header-top {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+
+.header-nav-menu{
+  padding: 10px !important;
+}
+
+@media (width:344px) {
+  .header-nav-menu {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+
+.popup-form {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.6);
+  z-index: 1000;
+}
+.form-container {
+  background: white;
+  max-width: 600px;
+  margin: 5% auto;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}

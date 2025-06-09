@@ -74,7 +74,7 @@
               <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="navbar-nav align-items-center justify-content-end flex-row" id="responsive-menu">
                   <li class="nav-item">
-                    <a class="nav-link px-3 py-0 white text-uppercase fw-medium" href="index.html">index</a>
+                    <a class="nav-link px-3 py-0 white text-uppercase fw-medium" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link px-3 py-0 white text-uppercase fw-medium" href="about.html">About</a>
@@ -292,7 +292,7 @@
                   </div>
                 </div>
                 <div class="add-to-cart border-dashed border-top-0 border-start-0 border-end-0 border-2 mb-4 pb-4">
-                  <input type="number" name="quantity" id="quantity" class="border-grey1 w-md-10 w-20 pe-2 me-3" min="0" value="1"> <a href="cart.html" class="btn btn2">Add to Cart</a>
+                  <input type="number" name="quantity" id="quantity" class="border-grey1 w-md-10 w-20 pe-2 me-3" min="0" value="1"><a href="javascript:void(0);" class="btn btn2" onclick="openPopup()">Book Now</a>
                 </div>
                 <div class="product-info border-dashed border-top-0 border-start-0 border-end-0 border-2 mb-4 pb-4">
                   <h4 class="mb-2">Product Info</h4>
@@ -454,7 +454,7 @@
                 <div class="product-image mb-5 position-relative bottom-0">
                   <a href="product-detail.html"><img src="images/bike/hl500-BMR-blue.jpg" alt="product-image" class="w-100 rounded2"></a>
                   <div class="add-to-cart-btn position-absolute">
-                    <a href="cart.html" class="btn btn2">Add to cart</a>
+                    <a href="javascript:void(0);" class="btn btn2" onclick="openPopup()">Book Now</a>
                   </div>
                 </div>
                 <div class="product-info">
@@ -468,7 +468,7 @@
                 <div class="product-image mb-5 position-relative bottom-0">
                   <a href="product-detail.html"><img src="images/bike/ivoomi-s1-2.0.avif" alt="product-image" class="w-100 rounded2"></a>
                   <div class="add-to-cart-btn position-absolute">
-                    <a href="cart.html" class="btn btn2">Add to cart</a>
+                    <a href="javascript:void(0);" class="btn btn2" onclick="openPopup()">Book Now</a>
                   </div>
                 </div>
                 <div class="product-info">
@@ -482,7 +482,7 @@
                 <div class="product-image mb-5 position-relative bottom-0">
                   <a href="product-detail.html"><img src="images/bike/Nk-CRUISER-green.png" alt="product-image" class="w-100 rounded2"></a>
                   <div class="add-to-cart-btn position-absolute">
-                    <a href="cart.html" class="btn btn2">Add to cart</a>
+                    <a href="javascript:void(0);" class="btn btn2" onclick="openPopup()">Book Now</a>
                   </div>
                 </div>
                 <div class="product-info">
@@ -496,7 +496,7 @@
                 <div class="product-image mb-5 position-relative bottom-0">
                   <a href="product-detail.html"><img src="images/bike/nk-e-bikes-spimri-green.jpg" alt="product-image" class="w-100 rounded2"></a>
                   <div class="add-to-cart-btn position-absolute">
-                    <a href="cart.html" class="btn btn2">Add to cart</a>
+                    <a href="javascript:void(0);" class="btn btn2" onclick="openPopup()">Book Now</a>
                   </div>
                 </div>
                 <div class="product-info">
@@ -626,6 +626,21 @@
       </div>
     </div>
   </footer>
+
+  <div id="popupForm" class="popup-form">
+    <div class="form-container">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <form>
+        <input type="text" name="name" id="name" class="bg-lightgreen mb-4 mx-1" placeholder="Your Name...">
+        <input type="text" name="address" id="address" class="bg-lightgreen mb-4 mx-1" placeholder="Your Address...">
+        <span class="d-md-flex">
+          <input type="number" name="phone" id="phone" class="bg-lightgreen mb-4 mx-1" placeholder="Phone No...">
+          <input type="email" name="email" id="email" class="bg-lightgreen mb-4 mx-1" placeholder="Your Email...">
+        </span>
+        <button class="bnt btn2 border-0">Send Message</button>
+      </form>
+    </div>
+  </div>
   <!-- Footer Section Ends -->
 
   <!--Back-to-top Button start-->
@@ -638,5 +653,23 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/plugin.js"></script>
   <script src="js/main.js"></script>
+<script>
+  function openPopup() {
+    document.getElementById('popupForm').style.display = 'block';
+  }
+
+  function closePopup() {
+    document.getElementById('popupForm').style.display = 'none';
+  }
+
+  // Optional: Close popup when clicking outside the form
+  window.onclick = function(event) {
+    const popup = document.getElementById('popupForm');
+    if (event.target == popup) {
+      closePopup();
+    }
+  }
+</script>
+
 </body>
 </html>
