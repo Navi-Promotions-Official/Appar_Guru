@@ -37,7 +37,7 @@
               <div class="header-top-left">
                 <ul class="list-unstyled d-flex">
                   <li class="me-4"><a href="mailto:apparguruev@gmail.com"><i class="fa fa-envelope-o me-2" aria-hidden="true"></i> apparguruev@gmail.com</a></li>
-                  <li><i class="fa fa-clock-o" aria-hidden="true"></i> Open Hours: Mon - Fri 9:00 - 18:30</li>
+                  <li><i class="fa fa-clock-o" aria-hidden="true"></i> Open Hours: Mon - Sat 9 am – 8 pm</li>
                 </ul>
               </div>
             </div>
@@ -51,6 +51,7 @@
                     <a href="" class="border border-1 border-grey rounded-circle text-center me-1"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                     <a href="" class="border border-1 border-grey rounded-circle text-center"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                   </li>
+                  
                 </ul>
               </div>
             </div>
@@ -64,14 +65,16 @@
           <div class="row align-items-center justify-content-between">
             <div class="col-xl-2 col-md-3 col-5">
               <div class="navbar-logo m-0">
-                <a href="index.html"><img src="images/ev-logo-04.png" alt="Logo" class="w-100"></a>
+                <a href="index.html" style="font-size: xx-large; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">
+                  <!-- <img src="images/WhatsApp Image 2025-04-17 at 5.44.52 PM (1).jpeg" style="width: 50px; height: 55px;" alt="Logo" class="w-100"> -->
+                  Appar Guru</a>
               </div>
             </div>
             <div class="col-lg-7">
               <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="navbar-nav align-items-center justify-content-end flex-row" id="responsive-menu">
-                  <li class="nav-item ">
-                    <a class="nav-link px-3 py-0 text-uppercase fw-medium" aria-current="page" href="index.html">Home</a>
+                  <li class="nav-item">
+                    <a class="nav-link px-3 py-0 white text-uppercase fw-medium" href="index.html">index</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link px-3 py-0 white text-uppercase fw-medium" href="about.html">About</a>
@@ -91,10 +94,10 @@
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle px-3 white text-uppercase fw-medium" href="#" role="button"
                       data-bs-toggle="dropdown" aria-expanded="false">
-                      Pages
+                      Products
                     </a>
                     <ul class="dropdown-menu bg-grey p-0 rounded1 bg-off-white border-0">
-                      <li><a class="dropdown-item py-2 px-7 text-capitalize dark-grey border-0"
+                      <!-- <li><a class="dropdown-item py-2 px-7 text-capitalize dark-grey border-0"
                           href="team.html">Our Team</a></li>
                       <li><a class="dropdown-item py-2 px-7 text-capitalize dark-grey border-0"
                         href="team-detail.html">Team Detail</a></li>
@@ -109,20 +112,20 @@
                       <li><a class="dropdown-item py-2 px-7 text-capitalize dark-grey border-0"
                           href="faq.html">Faq</a></li>
                       <li><a class="dropdown-item py-2 px-7 text-capitalize dark-grey border-0"
-                        href="price.html">Pricing</a></li>
-                      <li><a class="dropdown-item py-2 px-7 text-capitalize dark-grey border-0 active"
+                        href="price.html">Pricing</a></li> -->
+                      <li><a class="dropdown-item py-2 px-7 text-capitalize dark-grey border-0"
                           href="product-list.html">Product List</a></li>
                       <li><a class="dropdown-item py-2 px-7 text-capitalize dark-grey border-0"
-                          href="product-detail.html">Product Single</a></li> 
-                      <li><a class="dropdown-item py-2 px-7 text-capitalize dark-grey border-0"
-                        href="coming-soon.html">Coming Soon</a></li>    
+                          href="product-detail.html">Product Single</a></li>   
+                      <!-- <li><a class="dropdown-item py-2 px-7 text-capitalize dark-grey border-0"
+                        href="coming-soon.html">Coming Soon</a></li> 
                       <li><a class="dropdown-item py-2 px-7 text-capitalize dark-grey border-0"
                         href="error.html">404 Error</a></li>
                       <li class="border-0"><a class="dropdown-item py-2 px-7 text-capitalize dark-grey"
-                        href="search.html">Search Result</a></li>  
+                        href="search.html">Search Result</a></li>   -->
                     </ul>
                   </li>
-                  <li class="nav-item dropdown">
+                  <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle px-3 white text-uppercase fw-medium" href="#" role="button"
                       data-bs-toggle="dropdown" aria-expanded="false">
                       Projects
@@ -133,7 +136,7 @@
                       <li class="border-0"><a class="dropdown-item py-2 px-7 text-capitalize border-0 dark-grey"
                           href="project-detail.html">Project Detail</a></li>
                     </ul>
-                  </li>
+                  </li> -->
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle px-3 white text-uppercase fw-medium" href="#" role="button"
                       data-bs-toggle="dropdown" aria-expanded="false">
@@ -148,6 +151,35 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link px-3 py-0 white text-uppercase fw-medium" href="contact.html">Contact</a>
+                  </li>
+
+
+                  <li class="nav-item">
+                    <button onclick="translateToTamil()" class="btn text-uppercase">
+                      தமிழ்
+                    </button>
+
+                    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                    <script>
+                      function googleTranslateElementInit() {
+                        new google.translate.TranslateElement(
+                          { pageLanguage: 'en', autoDisplay: false }, 
+                          'google_translate_element'
+                        );
+                      }
+
+                      function translateToTamil() {
+                        const select = document.querySelector("select.goog-te-combo");
+                        if (select) {
+                          select.value = "ta"; // 'ta' is the language code for Tamil
+                          select.dispatchEvent(new Event("change"));
+                        }
+                      }
+                    </script>
+
+                    <!-- Hidden Google Translate element just for triggering -->
+                    <div id="google_translate_element" style="display: none;"></div>
                   </li>
                 </ul>
               </div>
@@ -297,10 +329,10 @@
             <div class="col-xl-4">
               <div class="footer-info">
                 <div class="footer-logo">
-                  <img src="images/ev-logo-04.png" alt="footer logo" class="w-60 mb-2">
+                  <img src="images/WhatsApp Image 2025-04-17 at 5.44.52 PM (1).jpeg" alt="footer logo" class="w-60 mb-2">
                 </div>
                 <div class="footer-info-inner mb-4">
-                  <p class="mb-2">We are a forward-thinking EV company committed to delivering smart, sustainable, and affordable electric mobility solutions for everyone.</p>
+                  <p class="mb-2">We are a next-generation electric vehicle company committed to delivering smart, sustainable, and reliable mobility solutions for cleaner future.</p>
                   <p> </p>
                 </div>
                 <div class="footer-socials d-flex justify-content-center justify-content-xl-start">
