@@ -1624,6 +1624,7 @@ input[type="radio"]:checked + .color-circle {
   background: rgba(0,0,0,0.6);
   z-index: 1000;
 }
+
 .form-container {
   background: white;
   max-width: 600px;
@@ -1632,6 +1633,7 @@ input[type="radio"]:checked + .color-circle {
   border-radius: 10px;
   position: relative;
 }
+
 .close-btn {
   position: absolute;
   top: 15px;
@@ -1639,3 +1641,42 @@ input[type="radio"]:checked + .color-circle {
   font-size: 24px;
   cursor: pointer;
 }
+
+.term-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.term-card:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+@media screen and (width: 1280px) {
+  .header-top-left ul,
+  .header-top-right ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .header-top-left li,
+  .header-top-right li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .header-top-left i,
+  .header-top-right i {
+    margin-right: 2px;
+    font-size: 16px;
+    min-width: 18px;
+  }
+
+  .header-socials a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+}
+
