@@ -90,35 +90,6 @@
                   <li class="nav-item">
                     <a class="nav-link px-3 py-0 white text-uppercase fw-medium" href="contact.html">Contact</a>
                   </li>
-
-
-                  <li class="nav-item">
-                    <button onclick="translateToTamil()" class="btn text-uppercase">
-                      தமிழ்
-                    </button>
-
-                    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-                    <script>
-                      function googleTranslateElementInit() {
-                        new google.translate.TranslateElement(
-                          { pageLanguage: 'en', autoDisplay: false }, 
-                          'google_translate_element'
-                        );
-                      }
-
-                      function translateToTamil() {
-                        const select = document.querySelector("select.goog-te-combo");
-                        if (select) {
-                          select.value = "ta"; // 'ta' is the language code for Tamil
-                          select.dispatchEvent(new Event("change"));
-                        }
-                      }
-                    </script>
-
-                    <!-- Hidden Google Translate element just for triggering -->
-                    <div id="google_translate_element" style="display: none;"></div>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -191,7 +162,7 @@
                 </div>
                 <div class="product-info">
                   <h5 class="mb-2"><a href="product-detail.html" class="black">Storie-2.4</a></h5>
-                  <span class="h6 fw-bold green">Rs. 94,999</span>
+                  <!-- <span class="h6 fw-bold green">Rs. 94,999</span> -->
                 </div>
               </div>
             </div>
@@ -226,7 +197,7 @@
                 </div>
                 <div class="product-info">
                   <h5 class="mb-2"><a href="product-detail.html" class="black">Storie-3.2</a></h5>
-                  <span class="h6 fw-bold green">Rs. 94,999</span>
+                  <!-- <span class="h6 fw-bold green">Rs. 94,999</span> -->
                 </div>
               </div>
             </div> 
@@ -243,7 +214,7 @@
                 </div>
                 <div class="product-info">
                   <h5 class="mb-2"><a href="product-detail.html" class="black">HL 500</a></h5>
-                  <span class="h6 fw-bold green">Rs. 108000</span>
+                  <!-- <span class="h6 fw-bold green">Rs. 108000</span> -->
                 </div>
               </div>
             </div>
@@ -260,7 +231,7 @@
                 </div>
                 <div class="product-info">
                   <h5 class="mb-2"><a href="product-detail.html" class="black">S1 2.0</a></h5>
-                  <span class="h6 fw-bold green">Rs. 74,999</span>
+                  <!-- <span class="h6 fw-bold green">Rs. 74,999</span> -->
                 </div>
               </div>
             </div>
@@ -277,7 +248,7 @@
                 </div>
                 <div class="product-info">
                   <h5 class="mb-2"><a href="product-detail.html" class="black">Crusier</a></h5>
-                  <span class="h6 fw-bold green">Rs. 89000</span>
+                  <!-- <span class="h6 fw-bold green">Rs. 89000</span> -->
                 </div>
               </div>
             </div>
@@ -294,7 +265,7 @@
                 </div>
                 <div class="product-info">
                   <h5 class="mb-2"><a href="product-detail.html" class="black">GTR +</a></h5>
-                  <span class="h6 fw-bold green">Rs. 66,000</span>
+                  <!-- <span class="h6 fw-bold green">Rs. 66,000</span> -->
                 </div>
               </div>
             </div>
@@ -311,7 +282,7 @@
                 </div>
                 <div class="product-info">
                   <h5 class="mb-2"><a href="product-detail.html" class="black">Spimri</a></h5>
-                  <span class="h6 fw-bold green">Rs. 89000</span>
+                  <!-- <span class="h6 fw-bold green">Rs. 89000</span> -->
                 </div>
               </div>
             </div>
@@ -328,7 +299,7 @@
                 </div>
                 <div class="product-info">
                   <h5 class="mb-2"><a href="product-detail.html" class="black">Eron</a></h5>
-                  <span class="h6 fw-bold green">Rs. 1,15,000</span>
+                  <!-- <span class="h6 fw-bold green">Rs. 1,15,000</span> -->
                 </div>
               </div>
             </div>
@@ -414,6 +385,17 @@
                   <li class="mb-4"><a href="service-list.html">Doorstep Service</a></li>
                   <li class="mb-4"><a href="service-list.html">Stepney Works</a></li>
                 </ul>
+                
+                <p class="text-white small mb-2">For all kinds of EV services, contact us at</p>
+                
+                <ul class="list-unstyled mt-1">
+                  <li class="mb-2">
+                    <a href="tel:+91 74491 11992" class="text-white">
+                      <i class="fa fa-phone me-2" aria-hidden="true"></i> +91 74491 11992
+                    </a>
+                  </li>
+                </ul>
+                
               </div>
             </div>
             <div class="col-xl-4">
@@ -464,14 +446,15 @@
   <div id="popupForm" class="popup-form">
     <div class="form-container">
       <span class="close-btn" onclick="closePopup()">&times;</span>
-      <form>
-        <input type="text" name="name" id="name" class="bg-lightgreen mb-4 mx-1" placeholder="Your Name...">
-        <input type="text" name="address" id="address" class="bg-lightgreen mb-4 mx-1" placeholder="Your Address...">
+      <form id="popup-contact-form">
+        <input type="text" name="user_name" class="bg-lightgreen mb-4 mx-1" placeholder="Your Name..." required>
+        <input type="text" name="user_address" class="bg-lightgreen mb-4 mx-1" placeholder="Your Address..." required>
         <span class="d-md-flex">
-          <input type="number" name="phone" id="phone" class="bg-lightgreen mb-4 mx-1" placeholder="Phone No...">
-          <input type="email" name="email" id="email" class="bg-lightgreen mb-4 mx-1" placeholder="Your Email...">
+          <input type="number" name="user_phone" class="bg-lightgreen mb-4 mx-1" placeholder="Phone No..." required>
+          <input type="email" name="user_email" class="bg-lightgreen mb-4 mx-1" placeholder="Your Email..." required>
         </span>
-        <button class="bnt btn2 border-0">Send Message</button>
+        <button class="btn btn2 border-0" type="submit">Send Message</button>
+        <p id="popup-form-message" class="mt-3 small fw-bold"></p>
       </form>
     </div>
   </div>
@@ -489,23 +472,54 @@
   <script src="js/plugin.js"></script>
   <script src="js/main.js"></script>
   <script src="js/price-range.js"></script>
-  <script>
+<!-- Load EmailJS library -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  // Initialize EmailJS
+  (function () {
+    emailjs.init("AHsH0oPD08QuS7rS8"); // Replace with your actual public key
+  })();
+
+  // Open the popup
   function openPopup() {
     document.getElementById('popupForm').style.display = 'block';
   }
 
+  // Close the popup
   function closePopup() {
     document.getElementById('popupForm').style.display = 'none';
   }
 
-  // Optional: Close popup when clicking outside the form
+  // Close popup when clicking outside the form container
   window.onclick = function(event) {
     const popup = document.getElementById('popupForm');
     if (event.target == popup) {
       closePopup();
     }
   }
+
+  // Handle form submission
+  document.getElementById('popup-contact-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const messageEl = document.getElementById('popup-form-message');
+    messageEl.innerHTML = '';
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'template_czf12gb', this)
+      .then(function () {
+        messageEl.innerHTML = 'Message sent successfully!';
+        messageEl.className = 'mt-3 small fw-bold text-success';
+        document.getElementById('popup-contact-form').reset();
+        // Optional: close popup after success
+        // closePopup();
+      }, function (error) {
+        messageEl.innerHTML = 'Failed to send message. Please try again.';
+        messageEl.className = 'mt-3 small fw-bold text-danger';
+        console.error('EmailJS error:', error);
+      });
+  });
 </script>
+
 
 </body>
 </html>

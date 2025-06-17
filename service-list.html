@@ -94,36 +94,6 @@
                   <li class="nav-item">
                     <a class="nav-link px-3 py-0 white text-uppercase fw-medium" href="contact.html">Contact</a>
                   </li>
-
-
-                  <li class="nav-item">
-                    <button onclick="translateToTamil()" class="btn text-uppercase">
-                      தமிழ்
-                    </button>
-
-                    <script
-                      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-                    <script>
-                      function googleTranslateElementInit() {
-                        new google.translate.TranslateElement(
-                          { pageLanguage: 'en', autoDisplay: false },
-                          'google_translate_element'
-                        );
-                      }
-
-                      function translateToTamil() {
-                        const select = document.querySelector("select.goog-te-combo");
-                        if (select) {
-                          select.value = "ta"; // 'ta' is the language code for Tamil
-                          select.dispatchEvent(new Event("change"));
-                        }
-                      }
-                    </script>
-
-                    <!-- Hidden Google Translate element just for triggering -->
-                    <div id="google_translate_element" style="display: none;"></div>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -183,6 +153,19 @@
         <div class="section-body">
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
 
+            <div class="col d-flex">
+              <div
+                class="service-box d-flex align-items-center flex-column text-center p-6 border border-2 bg-white border-lightgreen rounded2 w-100">
+                <div class="service-icon mb-3">
+                  <i class="fas fa-cog fa-3x text-lightgreen" style="color: #87C332;"></i>
+                </div>
+                <div class="service-info">
+                  <h4 class="mb-1"><a href="#" class="black">Full-Service Support</a></h4>
+                  <p>Expert technicians and spare part solutions to keep your EV running smoothly, anytime, anywhere.</p>
+                </div>
+              </div>
+            </div>
+
             <!-- Roadside Assistance -->
             <div class="col d-flex">
               <div
@@ -212,20 +195,6 @@
               </div>
             </div>
 
-            <!-- Stepney Works -->
-            <div class="col d-flex">
-              <div
-                class="service-box d-flex align-items-center flex-column text-center p-6 border border-2 bg-white border-lightgreen rounded2 w-100">
-                <div class="service-icon mb-3">
-                  <i class="fas fa-cog fa-3x text-lightgreen" style="color: #87C332;"></i>
-                </div>
-                <div class="service-info">
-                  <h4 class="mb-1"><a href="#" class="black">Stepney Works</a></h4>
-                  <p>From spare wheel replacement to puncture fixes, we ensure you’re back on the road quickly and
-                    safely.</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -398,6 +367,17 @@
                   <li class="mb-4"><a href="service-list.html">Doorstep Service</a></li>
                   <li class="mb-4"><a href="service-list.html">Stepney Works</a></li>
                 </ul>
+                
+                <p class="text-white small mb-2">For all kinds of EV services, contact us at</p>
+                
+                <ul class="list-unstyled mt-1">
+                  <li class="mb-2">
+                    <a href="tel:+91 74491 11992" class="text-white">
+                      <i class="fa fa-phone me-2" aria-hidden="true"></i> +91 74491 11992
+                    </a>
+                  </li>
+                </ul>
+                
               </div>
             </div>
             <div class="col-xl-4">
