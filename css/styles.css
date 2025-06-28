@@ -1685,3 +1685,92 @@ header {
   transition: background-color 0.3s ease;
 }
 
+.review-box2 {
+  padding: 38.5px !important;
+}
+
+.review-box3 {
+  padding: 37px !important;
+}
+
+@media (width: 1024px) {
+  .testimonial .review-box {
+    padding: 1.5rem !important;  /* Reduce padding inside review card */
+    font-size: 14px;             /* Slightly smaller text */
+  }
+
+  .testimonial .section-title h2 {
+    font-size: 24px;
+  }
+
+  .testimonial .section-title h6 {
+    font-size: 14px;
+  }
+
+  .testimonial .review-star i {
+    font-size: 14px;
+  }
+
+  .testimonial .review-info p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .testimonial .review-info h6,
+  .testimonial .review-info span {
+    font-size: 14px;
+  }
+
+  .testimonial .col-lg-4,
+  .testimonial .col-md-6 {
+    flex: 0 0 100%; /* Stack all testimonials in one column */
+    max-width: 100%;
+  }
+
+  .testimonial-inner {
+    padding: 0 15px;
+  }
+}
+
+@media (width: 1280px) {
+  .testimonial .review-box {
+    padding: 1.5rem !important;  /* Reduce padding inside review card */
+    font-size: 14px;             /* Slightly smaller text */
+  }
+
+  .testimonial .section-title h2 {
+    font-size: 24px;
+  }
+
+  .testimonial .section-title h6 {
+    font-size: 14px;
+  }
+
+  .testimonial .review-star i {
+    font-size: 14px;
+  }
+
+  .testimonial .review-info p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .testimonial .review-info h6,
+  .testimonial .review-info span {
+    font-size: 14px;
+  }
+
+  .testimonial .col-lg-4,
+  .testimonial .col-md-6 {
+    flex: 0 0 100%; /* Stack all testimonials in one column */
+    max-width: 100%;
+  }
+
+  .testimonial-inner {
+    padding: 0 15px;
+  }
+}
+
+.storie {
+  height: 450px;
+}
