@@ -1774,3 +1774,11 @@ header {
 .storie {
   height: 450px;
 }
+
+/* Adjust for medium and smaller screens */
+@media (max-width: 1024px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+}
