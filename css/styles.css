@@ -295,7 +295,7 @@ width: 400px;
    }
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
   .feature-box2{
     border: none !important;
     border-top: 1px solid #5F5F5F21 !important;
@@ -307,6 +307,7 @@ width: 400px;
     padding-right: 0 !important;
   }
 }
+
 
 
 /* About CSS */
@@ -1632,7 +1633,7 @@ input[type="radio"]:checked + .color-circle {
 .form-container {
   background: white;
   max-width: 600px;
-  margin: 5% 15px;
+  margin: 5% auto;
   padding: 30px;
   border-radius: 10px;
   position: relative;
